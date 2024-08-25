@@ -13,6 +13,7 @@ createBtn.addEventListener('click', createBoxes);
 destroyBtn.addEventListener('click', destroyBoxes);
 
 function createBoxes() {
+  boxCollection.innerHTML = '';
   const amount = Number(input.value);
   if (amount >= 1 && amount <= 100) {
     const boxes = [];
